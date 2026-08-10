@@ -9,13 +9,13 @@
     {
       "source": "/landscape/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=7200, immutable" }
+        { "key": "Cache-Control", "value": "public, max-age=7200" }
       ]
     },
     {
       "source": "/portrait/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=7200, immutable" }
+        { "key": "Cache-Control", "value": "public, max-age=7200" }
       ]
     }
   ]
