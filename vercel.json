@@ -1,19 +1,14 @@
 {
-  "redirects": [
-    { "source": "/landscape/:slug.htm", "destination": "/landscape/:slug", "permanent": true },
-    { "source": "/landscape/:slug.html", "destination": "/landscape/:slug", "permanent": true },
-    { "source": "/portrait/:slug.htm", "destination": "/portrait/:slug", "permanent": true },
-    { "source": "/portrait/:slug.html", "destination": "/portrait/:slug", "permanent": true }
-  ],
+  "cleanUrls": false,
   "headers": [
     {
-      "source": "/landscape/(.*)",
+      "source": "/landscape/(.*).html",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=7200" }
       ]
     },
     {
-      "source": "/portrait/(.*)",
+      "source": "/portrait/(.*).html",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=7200" }
       ]
